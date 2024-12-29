@@ -1,0 +1,17 @@
+feature:
+  test_size: 20
+  shuffle: True
+
+model_parameter:
+  n_estimators: 300
+  max_depth: 30
+  learning_rate: 0.01
+  subsample: 0.72
+  colsample_bytree: 0.5
+  gamma: 0
+  min_child_weight: 1
+  reg_alpha: 0
+  reg_lambda: 1
+  objective: 'reg:squarederror'
+  random_state: 42
+

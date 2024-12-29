@@ -1,0 +1,27 @@
+stages:
+  collect_data:
+    cmd: python src/collect_data.py
+    deps:
+    - src/collect_data.py
+    outs:
+    - data/raw/airline_delay.csv
+  data_preprocessing:
+    cmd: python src/features.py
+    deps:
+    - data/raw/airline_delay.csv
+    - src/features.py
+    outs:
+    - data/processed
+  build_model:
+    cmd: python src/build_model.py
+    deps:
+    - src/build_model.py
+  train_model:
+    cmd: python src/train.py
+    deps:
+    - data/processed
+    - src/build_model.py
+    - src/train.py
+    outs:
+    - models/model.pkl
+    - reports/metrics.json

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gupta/OneDrive/Desktop/Projects/flight_delay_prediction/flight_delay_prediction/mlruns/896717673052900290/3ecfc1bf07a7465c87c68a1b7114df4c/artifacts
+end_time: 1735408636519
+entry_point_name: ''
+experiment_id: '896717673052900290'
+lifecycle_stage: active
+run_id: 3ecfc1bf07a7465c87c68a1b7114df4c
+run_name: stately-sheep-592
+run_uuid: 3ecfc1bf07a7465c87c68a1b7114df4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735408636456
+status: 4
+tags: []
+user_id: gupta

@@ -1,0 +1,63 @@
+schema: '2.0'
+stages:
+  collect_data:
+    cmd: python src/collect_data.py
+    deps:
+    - path: src/collect_data.py
+      hash: md5
+      md5: b7c4520ffceac6e1339eab23aefd618c
+      size: 494
+    outs:
+    - path: data/raw/airline_delay.csv
+      hash: md5
+      md5: 66dc62f90b058742197f1403b57b4e9b
+      size: 514812
+  data_preprocessing:
+    cmd: python src/features.py
+    deps:
+    - path: data/raw/airline_delay.csv
+      hash: md5
+      md5: 66dc62f90b058742197f1403b57b4e9b
+      size: 514812
+    - path: src/features.py
+      hash: md5
+      md5: 35a7a41a1fa97defb26dfe6ea3d105bb
+      size: 1957
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 1c1bfc74e317482c5ca27b023c6d3338.dir
+      size: 273466
+      nfiles: 2
+  build_model:
+    cmd: python src/build_model.py
+    deps:
+    - path: src/build_model.py
+      hash: md5
+      md5: 88010d0a3af6a4d36bc22900dd38a143
+      size: 1240
+  train_model:
+    cmd: python src/train.py
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 1c1bfc74e317482c5ca27b023c6d3338.dir
+      size: 273466
+      nfiles: 2
+    - path: src/build_model.py
+      hash: md5
+      md5: 88010d0a3af6a4d36bc22900dd38a143
+      size: 1240
+    - path: src/train.py
+      hash: md5
+      md5: 5c861c1ff63ee32805f994a28d760b45
+      size: 2782
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 274762204ffdbef2654bb698ca9aebb7
+      size: 4837233
+    - path: reports/metrics.json
+      hash: md5
+      md5: 1c3110160cdef19c741fec4a1af0fdcf
+      size: 209

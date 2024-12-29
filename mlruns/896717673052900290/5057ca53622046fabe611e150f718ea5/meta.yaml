@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gupta/OneDrive/Desktop/Projects/flight_delay_prediction/flight_delay_prediction/mlruns/896717673052900290/5057ca53622046fabe611e150f718ea5/artifacts
+end_time: 1735408443047
+entry_point_name: ''
+experiment_id: '896717673052900290'
+lifecycle_stage: active
+run_id: 5057ca53622046fabe611e150f718ea5
+run_name: handsome-cat-630
+run_uuid: 5057ca53622046fabe611e150f718ea5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735408442892
+status: 4
+tags: []
+user_id: gupta
