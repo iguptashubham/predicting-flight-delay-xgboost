@@ -1,0 +1,12 @@
+name: ML Workflow
+
+on:
+  push:
+    branches:
+    - main
+    paths-ignore:
+      - 'Readme.md'
+
+permissions:
+  id-token: write
+  contents: read

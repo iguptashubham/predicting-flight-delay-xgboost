@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gupta/OneDrive/Desktop/Projects/flight_delay_prediction/flight_delay_prediction/mlruns/896717673052900290/bbd6f527e5e44742905d439d0b36058b/artifacts
+end_time: 1735550170127
+entry_point_name: ''
+experiment_id: '896717673052900290'
+lifecycle_stage: active
+run_id: bbd6f527e5e44742905d439d0b36058b
+run_name: shivering-skink-979
+run_uuid: bbd6f527e5e44742905d439d0b36058b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735550161651
+status: 3
+tags: []
+user_id: gupta

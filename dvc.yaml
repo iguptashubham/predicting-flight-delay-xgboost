@@ -10,6 +10,8 @@ stages:
     deps:
     - data/raw/airline_delay.csv
     - src/features.py
+    params:
+    - feature
     outs:
     - data/processed
   build_model:
@@ -22,6 +24,8 @@ stages:
     - data/processed
     - src/build_model.py
     - src/train.py
+    params:
+    - model_parameter
     outs:
     - models/model.pkl
     - reports/metrics.json
