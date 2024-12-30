@@ -3,10 +3,10 @@ feature:
   shuffle: True
 
 model_parameter:
-  n_estimators: 300
-  max_depth: 30
-  learning_rate: 0.01
-  subsample: 0.72
+  n_estimators: 330
+  max_depth: 33
+  learning_rate: 0.1
+  subsample: 0.63
   colsample_bytree: 0.5
   gamma: 0
   min_child_weight: 1

@@ -60,10 +60,10 @@ stages:
     params:
       params.yaml:
         model_parameter:
-          n_estimators: 300
-          max_depth: 30
-          learning_rate: 0.01
-          subsample: 0.72
+          n_estimators: 330
+          max_depth: 33
+          learning_rate: 0.1
+          subsample: 0.63
           colsample_bytree: 0.5
           gamma: 0
           min_child_weight: 1
@@ -74,9 +74,9 @@ stages:
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 4a719b48b8a929a94e0aa2fb8a1e02d1
-      size: 4687293
+      md5: 922eaa809b72eac1ac1d413f0581a506
+      size: 4584863
     - path: reports/metrics.json
       hash: md5
-      md5: 95f8124869a11ee8afe4f22319082fb2
-      size: 212
+      md5: 7481439b23fe908cfedbc0b8a8ecc6de
+      size: 209

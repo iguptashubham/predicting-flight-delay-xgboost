@@ -1,0 +1,4 @@
+[core]
+    remote = flightml
+['remote "flightml"']
+    url = s3://dvc-store-s3

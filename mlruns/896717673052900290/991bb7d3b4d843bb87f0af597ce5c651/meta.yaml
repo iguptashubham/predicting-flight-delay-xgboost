@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gupta/OneDrive/Desktop/Projects/flight_delay_prediction/flight_delay_prediction/mlruns/896717673052900290/991bb7d3b4d843bb87f0af597ce5c651/artifacts
+end_time: 1735586551174
+entry_point_name: ''
+experiment_id: '896717673052900290'
+lifecycle_stage: active
+run_id: 991bb7d3b4d843bb87f0af597ce5c651
+run_name: indecisive-bear-351
+run_uuid: 991bb7d3b4d843bb87f0af597ce5c651
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735586543142
+status: 3
+tags: []
+user_id: gupta
