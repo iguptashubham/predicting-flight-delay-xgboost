@@ -5,6 +5,7 @@ from utils.logger import custom_logger
 collect_log = custom_logger(file_name='data_collection')
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR = ROOT_DIR / 'data' / 'raw'
 
 df = pd.read_csv(r'https://raw.githubusercontent.com/YBI-Foundation/Dataset/refs/heads/main/Airline%20Delay.csv')
