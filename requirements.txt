@@ -11,4 +11,3 @@ fastapi
 uvicorn  # Make sure to specify the version
 dvc-s3
 awscli
-logging
