@@ -19,17 +19,16 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version : '3.12.7'
+          python-version: '3.12.7'
       
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip  
           pip install -r requirements.txt
+
+      - name: Setup DVC
+        uses: iterative/setup-dvc@v1
       
       - name: Run DVC ML pipeline
-        run : |
+        run: |
           dvc repro
-
-      
-
-
